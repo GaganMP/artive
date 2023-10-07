@@ -27,8 +27,8 @@ html {
   --grey-100: #f1f5f9;
   --grey-200: #e2e8f0;
   --grey-300: #cbd5e1;
-  --grey-400: #94a3b8;
-  --grey-500: #64748b;
+  --grey-400: #e7eaed;
+  --grey-500: #dae1ea;
   --grey-600: #475569;
   --grey-700: #334155;
   --grey-800: #1e293b;
@@ -408,19 +408,21 @@ Hero
   margin-bottom: 2rem;
   background: url('../assets/main.jpeg') center/cover no-repeat;
   border-radius: var(--borderRadius);
-
+ color:white;
 
 }
 
 .hero:hover
 {
   width: 125% ;
+  color:white;
 }
 
 
 .hero{
   transition: width;
   transition-duration: 10s;
+  color:white;
 }
 
 .hero-container {
@@ -435,10 +437,15 @@ Hero
   background: rgba(0, 0, 0, 0.4);
   border-radius: var(--borderRadius);
   
+  
 }
 .hero-text {
   color: var(--white);
   text-align: center;
+  animation-name:cch;
+  animation-duration:5s;
+  animation-delay:2s;
+  animation-iteration-count: infinite;
 }
 
 @media only screen and (min-width: 768px) {
@@ -608,11 +615,14 @@ Contact Page
 .contact-form {
   width: 100%;
   margin: 0;
+  color:white;
 }
 .contact-container {
   display: grid;
   gap: 2rem 3rem;
   padding-bottom: 3rem;
+  color:white;
+
 }
 @media screen and (min-width: 992px) {
   .contact-container {
@@ -639,6 +649,7 @@ Tags Page
   color: var(--white);
   transition: var(--transition);
   padding: 0.75rem 0;
+  color:white;
 }
 .tag:hover {
   background: var(--primary-500);
@@ -646,6 +657,7 @@ Tags Page
 .tag h5,
 .tag p {
   margin-bottom: 0;
+  color:white;
 }
 .tag h5 {
   font-weight: 600;
@@ -670,6 +682,7 @@ Recipe Template
 .recipe-hero {
   display: grid;
   gap: 3rem;
+  color:white;
 }
 
 .recipe-hero-img {
@@ -767,3 +780,13 @@ Recipe Template
   color: var(--primary-500);
   text-transform: capitalize;
 }
+
+@keyframes cch {
+  0%{color:green;}
+  25%{color:blue;}
+  50%{color:#842029;}
+  75%{color:bisque;}
+  100%{color:palevioletred;}
+  
+}
+

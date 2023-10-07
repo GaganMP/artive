@@ -22,6 +22,8 @@ html {
 
 body {
   margin: 0;
+  background-image:linear-gradient(30deg,red, yellow, rgb(202, 147, 27), blue);
+
 }
 
 /**
@@ -30,6 +32,8 @@ body {
 
 main {
   display: block;
+  background-image:linear-gradient(30deg, rgb(163, 59, 163), green, rgb(141, 63, 56));
+   color:azure;
 }
 
 /**
@@ -64,6 +68,7 @@ hr {
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+  color:white;
 }
 
 /* Text-level semantics
@@ -86,6 +91,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
+  color:white;
 }
 
 /**
@@ -166,6 +172,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  color:white
 }
 
 /**
