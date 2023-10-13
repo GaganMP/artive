@@ -266,6 +266,88 @@ function doubles(arr)
 {
     var x;
 
-    var y=arr.map((x)=>return 2*x)
-     return y;
+    var y=arr.map((x)=> 2*x);
+    return y;
+}
+
+ //21)Hero vs Dragon it takes two bullets to kill a dragon based on given number of bullets and dragons
+ //predict weather the hero dies or wins
+ function predict(bullets,dragons)
+ {
+    if(bullets>=2*dragons)
+    {return true;}
+    else
+    return false;
+ }
+
+ // write a program to add two array(adding corresponding elements of two array)
+ function add(arr1,arr2)
+ { let s=[];
+  var i;
+  var small=((arr1.length<arr2.length)?arr1:arr2);
+   for(i in small)
+   { s.push(arr1[i]+arr2[i]);
+       
+   }
+    
+   var ext=(arr1.length > arr2.length) ? arr1.splice(arr2.length,arr1.length):arr2.splice(arr1.length,arr2.length);
+  console.log(ext);
+   
+   return s.concat(ext);
+  
+ }
+
+ //22)you are given 2 array add the two array and return the total 
+//obtained by adding all the elements of the array
+
+function totalsum(arr1,arr2)
+{let sum=0;
+  for(var i in arr1)
+  {sum=sum+arr1[i]+arr2[i];
+
+  }
+  return sum;
+}
+
+
+//23)determine the century of the year 1 -100 corresponds to 1st century
+//101-200 determined as 2nd century
+function century(year)
+{ c=year/100;
+  console.log(c);
+  year%100!=0?c=c+1:c;
+  return c;
+
+}
+
+//24convert humanyear -> catyear dogyear 
+function humanyeattoCatDogYear(humanyear)
+{
+  if (humanyear==1) return [1,15,15];
+  if (humanyear==2) return [2,15+9,15+9];
+  if (humanyear>2) return [humanyear,15+9+(humanyear-2)*4,15+9+(humanyear-2)*5];
+} 
+//25) Football championship
+
+function championship(arr)
+{ let a=0;
+  let b=0;
+  for(var x of arr)
+  { var z=x.split(":")
+    console.log(z);
+    if(z[0]>z[2])
+    {a+=3;}
+
+    if(z[0]<z[2])
+    {b+=3;}
+
+    if(z[0]=z[2])
+    {a+=1;
+    b+=1;}
+}
+
+ if(a>b) return "a won the match";
+ else if(a<b) return "b won the match";
+ else return "Match draw";
+   
 }
